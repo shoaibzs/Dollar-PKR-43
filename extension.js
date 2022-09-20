@@ -65,6 +65,11 @@ function disable() {
         GLib.Source.remove(sourceId);
         sourceId = null;
     }
+    
+    if (session) {
+        session.abort(session);
+        session = null;
+    }
 }
 
 // Handle Requests API Dollar
@@ -92,6 +97,7 @@ async function handle_request_dollar_api() {
 
             // Sext text in Widget
             panelButtonText = new St.Label({
+            style_class : "cPanelText",
                 text: "(1 USD = " + dollarQuotation + " PKR)",
                 y_align: Clutter.ActorAlign.CENTER,
             });
