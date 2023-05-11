@@ -1,6 +1,6 @@
 # Dollar-PKR
 ```
-Gnome-Shell v.(43) Extension, for conversion of Dollar (USD) to Rs (PKR).
+Gnome-Shell v.(43,44) Extension, for conversion of Dollar (USD) to Rs (PKR).
 
 # Licence
 ```
